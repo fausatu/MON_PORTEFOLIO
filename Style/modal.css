@@ -1,0 +1,144 @@
+/* Styles améliorés pour modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal.active {
+    display: flex;
+    animation: modalBackdropFadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 800px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.4s ease;
+    border-top: 5px solid #4361ee;
+}
+
+@keyframes modalBackdropFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalSlideIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    color: #4361ee;
+}
+
+.close-modal:hover {
+    background-color: #f8f9fa;
+    color: #ff6b6b;
+    transform: rotate(90deg);
+}
+
+.modal-content h2 {
+    color: #4361ee;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.modal-content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #4361ee;
+    border-radius: 2px;
+}
+
+.modal-content h3 {
+    color: #2b2d42;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.modal-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.modal-content ul, 
+.modal-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Pour ajouter un effet visuel lorsque la modale se ferme */
+.modal.closing {
+    animation: modalBackdropFadeOut 0.3s ease forwards;
+}
+
+.modal.closing .modal-content {
+    animation: modalSlideOut 0.3s ease forwards;
+}
+
+@keyframes modalBackdropFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes modalSlideOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+}
+
+/* Styles responsifs pour mobile */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 2rem 1.5rem;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.7rem;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.3rem;
+    }
+}

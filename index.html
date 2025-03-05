@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="/Style/modal.css">
+        <!-- Font Awesome -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Port<span>folio</span></a>
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#home" class="active">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span class="highlight typing" id="typing">Développeuse</span></h1>
+                <p>Bienvenue sur mon portfolio. Je suis etudiante en génie logiciel et je suis passionnée par le developpement web.</p>
+                <div>
+                    <a href="#portfolio" class="btn">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/fausatu"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos de moi</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="/image/Akintayese Fausat.jpg" alt="Ma photo">
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Qui suis-je?</h3>
+                    <p>Je suis une étudiante en informatique qui s'est decouverte une passion pour le développement web dès la première année de licence. Je n'ai pas d'experience professionnelle mais j'ai realisé quelque projet academique et personnels .</p>
+                    <p>J'aime coder , apprendre de nouvelles choses et partager mes connaissances avec les autres.</p>
+                    <div class="skills">
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">PHP</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">UI/UX Design</span>
+                        <span class="skill">Responsive Design</span>
+                        
+                    </div>
+                    <a href="/Doc/MonCv.pdf" class="btn" style="margin-top: 2rem;" download>Télécharger CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes Services</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Création de sites web modernes, réactifs et optimisés pour les moteurs de recherche.</p>
+                    <a href="#" class="btn" data-modal-target="modal-dev-web">En savoir plus</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsive</h3>
+                    <p>Conception d'interfaces utilisateur fonctionnant parfaitement sur tous les appareils.</p>
+                    <a href="#" class="btn" data-modal-target="modal-responsive">En savoir plus</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Création d'expériences utilisateur intuitives et de designs visuellement attrayants.</p>
+                    <a href="#" class="btn" data-modal-target="modal-uiux">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mon Portfolio</h2>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Application</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Projet 1 -->
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="/image/Gest_note.png" alt="Projet 1">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Application de gestion de note</h3>
+                        <p>Développement Web</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">php</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <!-- <div class="portfolio-item fade-in" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="/api/placeholder/600/400" alt="Projet 2">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Application Mobile</h3>
+                        <p>Développement d'application</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React Native</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Projet 3 -->
+                <!-- <div class="portfolio-item fade-in" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="/api/placeholder/600/400" alt="Projet 3">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Design Site Vitrine</h3>
+                        <p>UI/UX Design</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Figma</span>
+                            <span class="portfolio-tag">Adobe XD</span>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Projet 4 -->
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="/image/gest_fastfood.png" alt="Projet 4">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Application de fast-food</h3>
+                        <p>Développement Web</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">html</span>
+                            <span class="portfolio-tag">css</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">PHP</span>
+                            <span class="portfolio-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 5 -->
+                <!-- <div class="portfolio-item fade-in" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="/api/placeholder/600/400" alt="Projet 5">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Application Dashboard</h3>
+                        <p>UI/UX Design</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Sketch</span>
+                            <span class="portfolio-tag">Illustrator</span>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Projet 6 -->
+                <div class="portfolio-item fade-in" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="/image/taskMaster.png" alt="Projet 6">
+                        <div class="portfolio-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Application Web Progressive</h3>
+                        <p>Développement d'application</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">PHP</span>
+                            <span class="portfolio-tag">Mysql</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Me Contacter</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Vous avez un projet? Discutons-en!</h3>
+                    <p>N'hésitez pas à me contacter pour discuter de votre projet ou pour toute question. Je suis disponible pour travailler sur de nouveaux projets passionnants.</p>
+                    <div class="contact-details">
+                        <div>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                +225 05 54 30 33 60
+                                <span>Lundi - Vendredi: 9h - 18h</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                akintoyessef@gmail.com 
+                                <span>Envoyez-moi à tout moment!</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Abidjan, Côte d'Ivoire 
+                                <span>00225</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p class="hidden" style="display:none;">
+                        <label>Ne pas remplir si vous êtes humain: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="#" class="footer-logo">Port<span>folio</span></a>
+                    <p class="footer-text">Créer des expériences numériques exceptionnelles est ma passion. Discutons de la façon dont je peux vous aider à concrétiser votre vision.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Design Responsive</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                       
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MonPortfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+        
+    </div>
+
+
+
+
+    <!-- Modales pour les services -->
+<div class="modal" id="modal-dev-web">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Développement Web</h2>
+        <p>Je crée des sites web professionnels, modernes et optimisés pour les moteurs de recherche. Mes sites sont développés avec les dernières technologies web pour offrir une expérience utilisateur exceptionnelle.</p>
+        <h3>Technologies utilisées</h3>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>PHP, MySQL</li>
+            <li>Responsive Design</li>
+            <li>SEO optimisé</li>
+        </ul>
+        <h3>Processus de développement</h3>
+        <ol>
+            <li>Analyse des besoins</li>
+            <li>Création de maquettes</li>
+            <li>Développement</li>
+            <li>Tests et optimisation</li>
+            <li>Mise en ligne</li>
+        </ol>
+    </div>
+</div>
+
+<div class="modal" id="modal-responsive">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Design Responsive</h2>
+        <p>Je conçois des interfaces qui s'adaptent parfaitement à tous les types d'écrans, du mobile aux grands écrans.</p>
+        <h3>Avantages du design responsive</h3>
+        <ul>
+            <li>Expérience utilisateur optimale sur tous les appareils</li>
+            <li>Meilleur référencement sur les moteurs de recherche</li>
+            <li>Réduction des coûts (un seul site à maintenir)</li>
+            <li>Amélioration du taux de conversion</li>
+        </ul>
+        <h3>Mon approche</h3>
+        <p>J'utilise les dernières techniques de conception responsive, en suivant les principes du "mobile-first" et en testant rigoureusement chaque design sur différents appareils.</p>
+    </div>
+</div>
+
+<div class="modal" id="modal-uiux">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>UI/UX Design</h2>
+        <p>Je crée des interfaces utilisateur intuitives et des expériences utilisateur engageantes qui aident votre entreprise à se démarquer.</p>
+        <h3>Services inclus</h3>
+        <ul>
+            <li>Recherche utilisateur et analyse des besoins</li>
+            <li>Wireframing et prototypage</li>
+            <li>Design d'interface utilisateur</li>
+            <li>Tests d'utilisabilité</li>
+            <li>Design d'interaction</li>
+        </ul>
+        <h3>Outils utilisés</h3>
+        <p>Je maîtrise les outils professionnels de design comme Figma, Adobe XD pour créer des designs modernes et fonctionnels.</p>
+    </div>
+</div>
+    <script src="/JS/MYjS.js"></script>
+    <script src="/JS/modal.js"></script>
+</body>
+</html>

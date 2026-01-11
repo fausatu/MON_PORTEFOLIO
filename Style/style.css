@@ -859,7 +859,35 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-text pre {
+        font-size: 0.75rem;
+        padding: 1rem !important;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .skill {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .btn {

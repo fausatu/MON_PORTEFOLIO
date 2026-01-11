@@ -380,28 +380,68 @@
 
 /* Responsive pour mobile */
 @media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 2rem 1.5rem;
+        max-height: 90vh;
+    }
+
+    .close-modal {
+        top: 0.8rem;
+        right: 1rem;
+        width: 32px;
+        height: 32px;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+
     .modal-project {
-        width: 90%;
+        width: 95%;
         max-height: 95vh;
+    }
+
+    .modal-project .close-modal {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     .modal-project-header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 1.5rem;
+        padding: 1rem 1.5rem;
+        gap: 0.5rem;
+    }
+
+    .modal-project-header h2 {
+        font-size: 1.4rem;
+        padding-right: 2rem;
     }
 
     .modal-project-body {
         grid-template-columns: 1fr;
-        padding: 1.5rem;
+        padding: 1rem;
         gap: 1.5rem;
     }
 
     .gallery-main {
-        min-height: 250px;
+        min-height: 200px;
+        max-height: 250px;
+    }
+
+    .gallery-thumb {
+        width: 50px;
+        height: 50px;
     }
 
     .modal-project-info {
         padding-right: 0;
+    }
+
+    .modal-project-info p,
+    .modal-project-info li {
+        font-size: 0.95rem;
     }
 }

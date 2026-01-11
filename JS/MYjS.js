@@ -18,6 +18,7 @@ const header = document.getElementById('header');
 
         function typeEffect() {
             const currentWord = words[wordIndex];
+                    if (!typingElement) return;
             
             if (isDeleting) {
                 typingElement.textContent = currentWord.substring(0, charIndex - 1);
@@ -63,7 +64,7 @@ const header = document.getElementById('header');
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
                 
-                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
                     current = section.getAttribute('id');
                 }
             });
@@ -109,22 +110,30 @@ const header = document.getElementById('header');
                 const filterValue = btn.getAttribute('data-filter');
                 
                 portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    const category = item.getAttribute('data-category');
+                    const size = item.getAttribute('data-size');
+
+                    if (filterValue === 'all') {
                         item.style.display = 'block';
+                    } else if (filterValue === 'small' || filterValue === 'large') {
+                        if (size === filterValue) item.style.display = 'block'; else item.style.display = 'none';
                     } else {
-                        item.style.display = 'none';
+                        if (category === filterValue) item.style.display = 'block'; else item.style.display = 'none';
                     }
                 });
             });
         });
 
         // Scroll to top
-        scrollTopBtn.addEventListener('click', () => {
+        if (scrollTopBtn) {
+            scrollTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
-        });
+            });
+        }
+        
 
         // Initialize the typing effect
         window.addEventListener('load', () => {

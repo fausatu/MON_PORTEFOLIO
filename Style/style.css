@@ -438,6 +438,54 @@ section {
     gap: 2rem;
 }
 
+/* Make large portfolio items span two columns on wider screens */
+
+/* Ensure all portfolio cards have the same size */
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.portfolio-img {
+    height: 220px; /* fixed image area for uniform cards */
+    flex: 0 0 220px;
+}
+
+.portfolio-info {
+    flex: 1 1 auto; /* let content fill the remaining space */
+}
+
+/* Project type badge */
+.project-type {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.6rem;
+    vertical-align: middle;
+}
+
+/* Local project indicator */
+.portfolio-local {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    cursor: default;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
 .portfolio-item {
     border-radius: 10px;
     overflow: hidden;
@@ -454,6 +502,7 @@ section {
 .portfolio-img {
     width: 100%;
     height: 250px;
+    
     background-color: #e5e7eb;
     position: relative;
     overflow: hidden;
@@ -462,12 +511,14 @@ section {
 .portfolio-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: var(--transition);
 }
 
+/* Reduce hover zoom to avoid cropping; keep image visible */
 .portfolio-item:hover .portfolio-img img {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .portfolio-overlay {
@@ -510,6 +561,44 @@ section {
 
 .portfolio-item:hover .portfolio-overlay a:nth-child(2) {
     transition-delay: 0.1s;
+}
+
+.portfolio-item:hover .portfolio-local {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Portfolio details button styling */
+.portfolio-details-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: var(--transition);
+    font-size: 1.2rem;
+}
+
+.portfolio-item:hover .portfolio-details-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-details-btn:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.portfolio-details-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(0) scale(1.1);
 }
 
 .portfolio-info {
@@ -635,6 +724,16 @@ section {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Accessible focus outlines */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
 }
 
 textarea.form-control {

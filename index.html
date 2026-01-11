@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style/style.css">
-    <link rel="stylesheet" href="/Style/modal.css">
-        <!-- Font Awesome -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <meta name="description" content="Portfolio de Fausat — développeuse web full-stack. Projets, services et contact.">
+    <meta property="og:title" content="Fausat — Développeuse Web | Portfolio">
+    <meta property="og:description" content="Portfolio de Fausat — développeuse web full-stack. Découvrez mes projets, compétences et services.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/modal.css">
+    <!-- Font Awesome (CSS for better perf) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
 
-    <title>Document</title>
+    <title>Fausat — Développeuse Web | Portfolio</title>
 </head>
 <body>
     <header id="header">
@@ -44,7 +51,7 @@
                     <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
                 <div class="social-icons">
-                    <a href="https://github.com/fausatu"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/fausatu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -62,23 +69,36 @@
             </div>
             <div class="about-content">
                 <div class="about-img fade-in">
-                    <img src="/image/Akintayese Fausat.jpg" alt="Ma photo">
+                    <img src="image/Akintayese-Fausat.jpg" alt="Ma photo" loading="lazy">
                 </div>
                 <div class="about-text fade-in">
-                    <h3>Qui suis-je?</h3>
-                    <p>Je suis une étudiante en informatique qui s'est decouverte une passion pour le développement web dès la première année de licence. Je n'ai pas d'experience professionnelle mais j'ai realisé quelque projet academique et personnels .</p>
-                    <p>J'aime coder , apprendre de nouvelles choses et partager mes connaissances avec les autres.</p>
+                    <h3>Qui suis-je ?</h3>
+                    <pre style="font-family: 'Courier New', monospace; background: #1e1e1e; color: #d4d4d4; padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; overflow-x: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2);"><code><span style="color: #6a9955;">// Booting Fausat.dev...</span>
+
+<span style="color: #569cd6;">const</span> <span style="color: #9cdcfe;">fausat</span> <span style="color: #d4d4d4;">=</span> {
+  <span style="color: #9cdcfe;">age</span><span style="color: #d4d4d4;">:</span> <span style="color: #b5cea8;">21</span><span style="color: #d4d4d4;">,</span>
+  <span style="color: #9cdcfe;">background</span><span style="color: #d4d4d4;">:</span> <span style="color: #ce9178;">"Licence Informatique"</span><span style="color: #d4d4d4;">,</span>
+  <span style="color: #9cdcfe;">passion</span><span style="color: #d4d4d4;">:</span> <span style="color: #ce9178;">"Développement Web"</span><span style="color: #d4d4d4;">,</span>
+  <span style="color: #9cdcfe;">currentMode</span><span style="color: #d4d4d4;">:</span> <span style="color: #ce9178;">"L3 Marketing Digital"</span><span style="color: #d4d4d4;">,</span>
+  <span style="color: #9cdcfe;">nextStep</span><span style="color: #d4d4d4;">:</span> <span style="color: #ce9178;">"Retour en formation informatique"</span><span style="color: #d4d4d4;">,</span>
+  <span style="color: #9cdcfe;">vibe</span><span style="color: #d4d4d4;">:</span> <span style="color: #ce9178;">"Toujours en train de coder quelque chose"</span>
+}<span style="color: #d4d4d4;">;</span>
+
+<span style="color: #dcdcaa;">console</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">log</span><span style="color: #d4d4d4;">(</span><span style="color: #ce9178;">"👩‍💻 Bienvenue dans mon univers !"</span><span style="color: #d4d4d4;">);</span></code></pre>
+                    <p>Je suis Fausat, développeuse passionnée qui a fait un petit détour par le marketing digital. Pourquoi ? Pour comprendre les utilisateurs, les stratégies, les besoins réels derrière un produit.</p>
+                    <p>Mais la vérité, c'est que rien ne me rend plus heureuse qu'un bon vieux fichier .js, une API à construire, ou une base PostgreSQL qui tourne proprement.</p>
+                    <p>Ce combo marketing + dev me donne un super-pouvoir : je sais coder des solutions qui répondent à de vrais besoins<strong style="color: #000000; font-family: 'Courier New', monospace;"> (; </strong></p>
+                    <p><strong>Bref, je suis une développeuse qui pense comme une marketeuse, et une marketeuse qui code comme une développeuse.</strong></p>
                     <div class="skills">
                         <span class="skill">HTML5</span>
                         <span class="skill">CSS3</span>
                         <span class="skill">JavaScript</span>
                         <span class="skill">PHP</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">UI/UX Design</span>
+                        <span class="skill">MySQL/PostgreSQL</span>
                         <span class="skill">Responsive Design</span>
-                        
+                        <span class="skill">UI/UX Design</span>
                     </div>
-                    <a href="/Doc/MonCv.pdf" class="btn" style="margin-top: 2rem;" download>Télécharger CV</a>
+                    <a href="Doc/MonCv.pdf" class="btn" style="margin-top: 2rem;" download><i class="fas fa-download"></i> Télécharger mon CV</a>
                 </div>
             </div>
         </div>
@@ -88,7 +108,7 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Mes Services</h2>
+                <h2>Mes Compétences</h2>
             </div>
             <div class="services-container">
                 <div class="service-card fade-in">
@@ -127,78 +147,43 @@
             </div>
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">Application</button>
-                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="small">Mini-projets</button>
+                <button class="filter-btn" data-filter="large">Projets phares</button>
             </div>
             <div class="portfolio-grid">
                 <!-- Projet 1 -->
-                <div class="portfolio-item fade-in" data-category="web">
+                <div class="portfolio-item fade-in" data-category="web" data-size="small">
                     <div class="portfolio-img">
-                        <img src="/image/Gest_note.png" alt="Projet 1">
+                        <img src="image/Gest_note.png" alt="Projet 1" loading="lazy">
                         <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <span class="portfolio-local" title="Projet en local"><i class="fas fa-laptop"></i></span>
+                            <button class="portfolio-details-btn" data-modal-target="modal-gest-note" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Application de gestion de note</h3>
+                        <h3>Application de gestion de note <span class="project-type">Web</span></h3>
                         <p>Développement Web</p>
                         <div class="portfolio-tags">
                             <span class="portfolio-tag">HTML</span>
                             <span class="portfolio-tag">CSS</span>
                             <span class="portfolio-tag">JavaScript</span>
-                            <span class="portfolio-tag">php</span>
+                            <span class="portfolio-tag">PHP</span>
+                            <span class="portfolio-tag">MySQL</span>
+                            <span class="portfolio-tag">MariaDB</span>
                         </div>
                     </div>
                 </div>
-                <!-- Projet 2 -->
-                <!-- <div class="portfolio-item fade-in" data-category="app">
+
+                <div class="portfolio-item fade-in" data-category="web" data-size="large">
                     <div class="portfolio-img">
-                        <img src="/api/placeholder/600/400" alt="Projet 2">
+                        <img src="image/gest_fastfood.png" alt="Projet 4" loading="lazy">
                         <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <span class="portfolio-local" title="Projet en local"><i class="fas fa-laptop"></i></span>
+                            <button class="portfolio-details-btn" data-modal-target="modal-gest-fastfood" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Application Mobile</h3>
-                        <p>Développement d'application</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">React Native</span>
-                            <span class="portfolio-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Projet 3 -->
-                <!-- <div class="portfolio-item fade-in" data-category="design">
-                    <div class="portfolio-img">
-                        <img src="/api/placeholder/600/400" alt="Projet 3">
-                        <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Design Site Vitrine</h3>
-                        <p>UI/UX Design</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Figma</span>
-                            <span class="portfolio-tag">Adobe XD</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Projet 4 -->
-                <div class="portfolio-item fade-in" data-category="web">
-                    <div class="portfolio-img">
-                        <img src="/image/gest_fastfood.png" alt="Projet 4">
-                        <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Application de fast-food</h3>
+                        <h3>Application de fast-food <span class="project-type">Web</span></h3>
                         <p>Développement Web</p>
                         <div class="portfolio-tags">
                             <span class="portfolio-tag">html</span>
@@ -209,48 +194,295 @@
                         </div>
                     </div>
                 </div>
-                <!-- Projet 5 -->
-                <!-- <div class="portfolio-item fade-in" data-category="design">
+
+                <div class="portfolio-item fade-in" data-category="web" data-size="large">
                     <div class="portfolio-img">
-                        <img src="/api/placeholder/600/400" alt="Projet 5">
+                        <img src="image/letshare.png" alt="Projet letshare" loading="lazy">
                         <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="https://letshare.infinityfreeapp.com/index.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
+                            <button class="portfolio-details-btn" data-modal-target="modal-letshare" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h3>Application Dashboard</h3>
-                        <p>UI/UX Design</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Sketch</span>
-                            <span class="portfolio-tag">Illustrator</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Projet 6 -->
-                <div class="portfolio-item fade-in" data-category="app">
-                    <div class="portfolio-img">
-                        <img src="/image/taskMaster.png" alt="Projet 6">
-                        <div class="portfolio-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Application Web Progressive</h3>
-                        <p>Développement d'application</p>
+                        <h3>Letshare <span class="project-type">Web</span></h3>
+                        <p>Plateforme collaborative</p>
                         <div class="portfolio-tags">
                             <span class="portfolio-tag">HTML</span>
                             <span class="portfolio-tag">CSS</span>
                             <span class="portfolio-tag">JavaScript</span>
                             <span class="portfolio-tag">PHP</span>
-                            <span class="portfolio-tag">Mysql</span>
+                            <span class="portfolio-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="web" data-size="small">
+                    <div class="portfolio-img">
+                        <img src="image/gest.Event.png" alt="Projet gest.Event" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-local" title="Projet en local"><i class="fas fa-laptop"></i></span>
+                            <button class="portfolio-details-btn" data-modal-target="modal-gest-event" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Gest.Event <span class="project-type">Application</span></h3>
+                        <p>Gestion d'événements</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">PHP</span>
+                            <span class="portfolio-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="app" data-size="large">
+                    <div class="portfolio-img">
+                        <img src="image/taskMaster.png" alt="Projet taskMaster" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-local" title="Projet en local"><i class="fas fa-laptop"></i></span>
+                            <button class="portfolio-details-btn" data-modal-target="modal-taskmaster" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>TaskMaster <span class="project-type">Application Web Progressive</span></h3>
+                        <p>Gestion de tâches PWA</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">Service Worker</span>
+                            <span class="portfolio-tag">IndexedDB</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modales Détails Projets -->
+    <div class="modal" id="modal-gest-note" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-gest-note-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-gest-note-title">Application de gestion de note</h2>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/Gest_note.png" alt="Capture d'écran" id="modal-gest-note-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/Gest_note.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>Application web de gestion scolaire développée dans le cadre d'un projet universitaire. Ce système complet permet la gestion des notes des étudiants avec trois interfaces distinctes : administrateur, professeur et étudiant. Mon premier projet full-stack avec backend intégré.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Interface administrateur pour la gestion des utilisateurs</li>
+                        <li>Espace professeur pour saisir et modifier les notes</li>
+                        <li>Consultation des notes par les étudiants</li>
+                        <li>Génération de bulletins et statistiques</li>
+                        <li>Système d'authentification multi-rôles</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">MariaDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-gest-fastfood" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-gest-fastfood-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-gest-fastfood-title">Application de fast-food</h2>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/gest_fastfood.png" alt="Capture d'écran" id="modal-gest-fastfood-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/gest_fastfood.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>Système de gestion complet pour restaurant fast-food, conçu pour optimiser les opérations quotidiennes. L'application permet de gérer efficacement le catalogue de produits, traiter les commandes en temps réel, suivre les stocks et générer automatiquement les factures pour une expérience fluide tant pour le personnel que pour les clients.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Catalogue de produits dynamique avec photos et prix</li>
+                        <li>Système de prise de commande rapide et intuitif</li>
+                        <li>Gestion automatisée de l'inventaire et alertes de stock</li>
+                        <li>Génération et impression de factures</li>
+                        <li>Tableau de bord avec statistiques de vente</li>
+                        <li>Interface caisse optimisée pour rapidité</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-letshare" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-letshare-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-letshare-title">Letshare</h2>
+                <a href="https://letshare.infinityfreeapp.com/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-visit">Visiter le site</a>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/letshare.png" alt="Capture d'écran" id="modal-letshare-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/letshare.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                            <img src="image/screenshots/letshare2.png" alt="Miniature 2" class="gallery-thumb" data-index="1">
+                            <img src="image/screenshots/letshare3.png" alt="Miniature 3" class="gallery-thumb" data-index="2">
+                            <img src="image/screenshots/letshare4.png" alt="Miniature 4" class="gallery-thumb" data-index="3">
+                            <img src="image/screenshots/letchar1.png" alt="Miniature 5" class="gallery-thumb" data-index="4">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>𝐋𝐞𝐭𝐒𝐡𝐚𝐫𝐞 est une plateforme web solidaire qui connecte les étudiants pour donner ou échanger du matériel scolaire. Plutôt que de laisser dormir des ressources sur une étagère, nous les remettons en circulation pour réduire les coûts, encourager l'entraide et favoriser une économie circulaire sur le campus.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Publication d'annonces de dons ou d'échanges</li>
+                        <li>Système de recherche et filtres par catégorie</li>
+                        <li>Messagerie intégrée entre étudiants</li>
+                        <li>Gestion des profils utilisateurs</li>
+                        <li>Notifications en temps réel</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-gest-event" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-gest-event-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-gest-event-title">Gest.Event</h2>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/gest.Event.png" alt="Capture d'écran" id="modal-gest-event-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/gest.Event.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>Application de gestion d'événements permettant de créer, planifier et suivre des événements avec gestion des participants et des ressources.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Création et gestion d'événements</li>
+                        <li>Gestion des participants et inscriptions</li>
+                        <li>Calendrier intégré</li>
+                        <li>Notifications et rappels</li>
+                        <li>Rapports et statistiques</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-taskmaster" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-taskmaster-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-taskmaster-title">TaskMaster</h2>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/taskMaster.png" alt="Capture d'écran" id="modal-taskmaster-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/taskMaster.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                            <img src="image/screenshots/TaskMaster1.png" alt="Miniature 2" class="gallery-thumb" data-index="1">
+                            <img src="image/screenshots/taskmaster2.png" alt="Miniature 3" class="gallery-thumb" data-index="2">
+                            <img src="image/screenshots/taskmaster3.png" alt="Miniature 4" class="gallery-thumb" data-index="3">
+                            <img src="image/screenshots/taskmaster4.png" alt="Miniature 5" class="gallery-thumb" data-index="4">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>Application Web Progressive (PWA) pour la gestion de tâches quotidiennes avec synchronisation offline et support mobile natif.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Créer, modifier et supprimer des tâches</li>
+                        <li>Fonctionnement hors ligne (offline-first)</li>
+                        <li>Synchronisation automatique</li>
+                        <li>Installation comme application native</li>
+                        <li>Notifications push</li>
+                        <li>Stockage local persistant</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Service Worker</span>
+                        <span class="tech-tag">IndexedDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -369,65 +601,69 @@
 
 
 
-    <!-- Modales pour les services -->
-<div class="modal" id="modal-dev-web">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>Développement Web</h2>
-        <p>Je crée des sites web professionnels, modernes et optimisés pour les moteurs de recherche. Mes sites sont développés avec les dernières technologies web pour offrir une expérience utilisateur exceptionnelle.</p>
-        <h3>Technologies utilisées</h3>
-        <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>PHP, MySQL</li>
-            <li>Responsive Design</li>
-            <li>SEO optimisé</li>
-        </ul>
-        <h3>Processus de développement</h3>
-        <ol>
-            <li>Analyse des besoins</li>
-            <li>Création de maquettes</li>
-            <li>Développement</li>
-            <li>Tests et optimisation</li>
-            <li>Mise en ligne</li>
-        </ol>
+    <!-- Modales pour les services (accessibles) -->
+    <div class="modal" id="modal-dev-web" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-dev-web-title" aria-describedby="modal-dev-web-desc" tabindex="-1">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <h2 id="modal-dev-web-title">Développement Web</h2>
+            <p id="modal-dev-web-desc">Je conçois et développe des applications web modernes et performantes en utilisant les technologies actuelles. Chaque projet est pensé pour répondre aux besoins spécifiques du client tout en offrant une expérience utilisateur fluide et intuitive.</p>
+            <h3>Compétences techniques</h3>
+            <ul>
+                <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript moderne</li>
+                <li><strong>Backend :</strong> PHP, gestion de bases de données MySQL/PostgreSQL</li>
+                <li><strong>Responsive Design :</strong> Mobile-first, adaptable à tous les écrans</li>
+                <li><strong>Performance :</strong> Optimisation SEO et temps de chargement</li>
+                <li><strong>Sécurité :</strong> Bonnes pratiques et validation des données</li>
+            </ul>
+            <h3>Ma démarche</h3>
+            <ol>
+                <li>Analyse approfondie des besoins et objectifs</li>
+                <li>Conception de l'architecture et des maquettes</li>
+                <li>Développement itératif avec validation continue</li>
+                <li>Tests rigoureux et optimisation des performances</li>
+                <li>Déploiement et accompagnement post-lancement</li>
+            </ol>
+        </div>
     </div>
-</div>
 
-<div class="modal" id="modal-responsive">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>Design Responsive</h2>
-        <p>Je conçois des interfaces qui s'adaptent parfaitement à tous les types d'écrans, du mobile aux grands écrans.</p>
-        <h3>Avantages du design responsive</h3>
-        <ul>
-            <li>Expérience utilisateur optimale sur tous les appareils</li>
-            <li>Meilleur référencement sur les moteurs de recherche</li>
-            <li>Réduction des coûts (un seul site à maintenir)</li>
-            <li>Amélioration du taux de conversion</li>
-        </ul>
-        <h3>Mon approche</h3>
-        <p>J'utilise les dernières techniques de conception responsive, en suivant les principes du "mobile-first" et en testant rigoureusement chaque design sur différents appareils.</p>
+    <div class="modal" id="modal-responsive" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-responsive-title" aria-describedby="modal-responsive-desc" tabindex="-1">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <h2 id="modal-responsive-title">Design Responsive</h2>
+            <p id="modal-responsive-desc">Je conçois des interfaces qui s'adaptent intelligemment à tous les types d'appareils. Que ce soit sur smartphone, tablette ou ordinateur, votre site offrira toujours une expérience optimale et cohérente à vos utilisateurs.</p>
+            <h3>Pourquoi le responsive est essentiel ?</h3>
+            <ul>
+                <li><strong>Accessibilité :</strong> Plus de 60% du trafic web provient du mobile</li>
+                <li><strong>SEO :</strong> Google favorise les sites mobile-friendly dans ses résultats</li>
+                <li><strong>Économie :</strong> Un seul site qui s'adapte à tout, pas de version mobile séparée</li>
+                <li><strong>Conversion :</strong> Une navigation fluide augmente les taux d'engagement</li>
+                <li><strong>Image de marque :</strong> Un design professionnel sur tous les supports</li>
+            </ul>
+            <h3>Mon approche mobile-first</h3>
+            <p>Je développe en commençant par la version mobile, puis j'enrichis progressivement l'expérience pour les écrans plus grands. Cette méthode garantit des performances optimales et une interface claire, quelle que soit la taille de l'écran.</p>
+        </div>
     </div>
-</div>
 
-<div class="modal" id="modal-uiux">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>UI/UX Design</h2>
-        <p>Je crée des interfaces utilisateur intuitives et des expériences utilisateur engageantes qui aident votre entreprise à se démarquer.</p>
-        <h3>Services inclus</h3>
-        <ul>
-            <li>Recherche utilisateur et analyse des besoins</li>
-            <li>Wireframing et prototypage</li>
-            <li>Design d'interface utilisateur</li>
-            <li>Tests d'utilisabilité</li>
-            <li>Design d'interaction</li>
-        </ul>
-        <h3>Outils utilisés</h3>
-        <p>Je maîtrise les outils professionnels de design comme Figma, Adobe XD pour créer des designs modernes et fonctionnels.</p>
+    <div class="modal" id="modal-uiux" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-uiux-title" aria-describedby="modal-uiux-desc" tabindex="-1">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <h2 id="modal-uiux-title">UI/UX Design</h2>
+            <p id="modal-uiux-desc">Je crée des interfaces visuellement attractives et des expériences utilisateur mémorables. Chaque élément est pensé pour guider naturellement vos visiteurs vers leurs objectifs tout en reflétant l'identité de votre marque.</p>
+            <h3>Ce que je vous apporte</h3>
+            <ul>
+                <li><strong>Recherche utilisateur :</strong> Comprendre les besoins réels de votre audience</li>
+                <li><strong>Architecture de l'information :</strong> Structurer le contenu de manière logique</li>
+                <li><strong>Wireframing & Prototypage :</strong> Valider les concepts avant développement</li>
+                <li><strong>Design d'interface :</strong> Créer une identité visuelle cohérente et moderne</li>
+                <li><strong>Tests d'utilisabilité :</strong> Affiner l'expérience selon les retours réels</li>
+                <li><strong>Design system :</strong> Assurer la cohérence sur tous vos supports</li>
+            </ul>
+            <h3>Ma philosophie</h3>
+            <p>Un bon design, c'est invisible. Il guide l'utilisateur sans effort, rend l'interface intuitive et transforme chaque interaction en une expérience agréable. Je mets l'utilisateur au cœur de chaque décision de design.</p>
+        </div>
     </div>
-</div>
-    <script src="/JS/MYjS.js"></script>
-    <script src="/JS/modal.js"></script>
+
+    <script src="JS/MYjS.js"></script>
+    <script src="JS/modal.js"></script>
 </body>
 </html>

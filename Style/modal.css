@@ -424,20 +424,60 @@
         grid-template-columns: 1fr;
         padding: 1rem;
         gap: 1.5rem;
+        overflow-x: hidden;
+    }
+
+    .modal-project-gallery {
+        width: 100%;
+        overflow: hidden;
     }
 
     .gallery-main {
         min-height: 200px;
         max-height: 250px;
+        width: 100%;
+    }
+
+    .gallery-nav {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .gallery-btn {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    .gallery-thumbs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #d1d5db transparent;
+    }
+
+    .gallery-thumbs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .gallery-thumbs::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .gallery-thumbs::-webkit-scrollbar-thumb {
+        background-color: #d1d5db;
+        border-radius: 10px;
     }
 
     .gallery-thumb {
         width: 50px;
         height: 50px;
+        flex-shrink: 0;
     }
 
     .modal-project-info {
         padding-right: 0;
+        width: 100%;
     }
 
     .modal-project-info p,

@@ -10,7 +10,7 @@ const header = document.getElementById('header');
         const typingElement = document.getElementById('typing');
 
         // Typing Effect
-        const words = ['Fausat','Développeuse full-stack', 'Designer', 'Freelance', 'Etudiante'];
+        const words = ['Fausat','Développeuse full-stack', 'Designer', 'Étudiante'];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

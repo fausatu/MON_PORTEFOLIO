@@ -105,8 +105,11 @@
                         <span class="skill">HTML5</span>
                         <span class="skill">CSS3</span>
                         <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
                         <span class="skill">PHP</span>
                         <span class="skill">MySQL/PostgreSQL</span>
+                        <span class="skill">Socket.io</span>
                         <span class="skill">Responsive Design</span>
                         <span class="skill">UI/UX Design</span>
                     </div>
@@ -266,6 +269,27 @@
                             <span class="portfolio-tag">JavaScript</span>
                             <span class="portfolio-tag">Service Worker</span>
                             <span class="portfolio-tag">IndexedDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="app" data-size="large">
+                    <div class="portfolio-img">
+                        <img src="image/letvote.png" alt="Projet LetVote" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-local" title="Projet en local"><i class="fas fa-laptop"></i></span>
+                            <button class="portfolio-details-btn" data-modal-target="modal-letvote" aria-label="Voir les détails"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>LetVote <span class="project-type">Application Full-Stack</span></h3>
+                        <p>Application de vote en temps réel</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">Node.js</span>
+                            <span class="portfolio-tag">Socket.io</span>
+                            <span class="portfolio-tag">MySQL</span>
+                            <span class="portfolio-tag">JWT</span>
                         </div>
                     </div>
                 </div>
@@ -496,6 +520,55 @@
         </div>
     </div>
 
+    <div class="modal" id="modal-letvote" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-letvote-title" tabindex="-1">
+        <div class="modal-content modal-project">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div class="modal-project-header">
+                <h2 id="modal-letvote-title">LetVote</h2>
+            </div>
+            <div class="modal-project-body">
+                <div class="modal-project-gallery">
+                    <div class="gallery-main">
+                        <img src="image/letvote.png" alt="Capture d'écran" id="modal-letvote-main-img">
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-thumbs">
+                            <img src="image/letvote.png" alt="Miniature 1" class="gallery-thumb active" data-index="0">
+                            <img src="image/screenshots/letvote1.png" alt="Miniature 2" class="gallery-thumb" data-index="1">
+                            <img src="image/screenshots/LETVOT2.png" alt="Miniature 3" class="gallery-thumb" data-index="2">
+                            <img src="image/screenshots/LETVOTE3.png" alt="Miniature 4" class="gallery-thumb" data-index="3">
+                            <img src="image/screenshots/LETVOTE4.png" alt="Miniature 5" class="gallery-thumb" data-index="4">
+                        </div>
+                        <button class="gallery-btn gallery-next" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="modal-project-info">
+                    <p>Application web moderne de vote en ligne permettant aux utilisateurs de participer à des élections de manière sécurisée et transparente. Interface élégante avec résultats mis à jour en temps réel et panneau d'administration pour gérer les candidats.</p>
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li>Inscription et connexion sécurisées avec authentification JWT</li>
+                        <li>Interface de vote intuitive avec photos et descriptions des candidats</li>
+                        <li>Résultats en temps réel avec Socket.io</li>
+                        <li>Protection anti-fraude (un vote unique par utilisateur)</li>
+                        <li>Panneau d'administration pour gestion des candidats</li>
+                        <li>Design responsive adapté mobile, tablette et desktop</li>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">bcrypt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -625,11 +698,13 @@
             <p id="modal-dev-web-desc">Je conçois et développe des applications web modernes et performantes en utilisant les technologies actuelles. Chaque projet est pensé pour répondre aux besoins spécifiques du client tout en offrant une expérience utilisateur fluide et intuitive.</p>
             <h3>Compétences techniques</h3>
             <ul>
-                <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript moderne</li>
-                <li><strong>Backend :</strong> PHP, gestion de bases de données MySQL/PostgreSQL</li>
+                <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript moderne, React</li>
+                <li><strong>Backend :</strong> Node.js, Express, PHP, API REST</li>
+                <li><strong>Bases de données :</strong> MySQL, PostgreSQL</li>
+                <li><strong>Temps réel :</strong> Socket.io pour applications en temps réel</li>
+                <li><strong>Authentification & Sécurité :</strong> JWT, bcrypt, validation des données</li>
                 <li><strong>Responsive Design :</strong> Mobile-first, adaptable à tous les écrans</li>
                 <li><strong>Performance :</strong> Optimisation SEO et temps de chargement</li>
-                <li><strong>Sécurité :</strong> Bonnes pratiques et validation des données</li>
             </ul>
             <h3>Ma démarche</h3>
             <ol>

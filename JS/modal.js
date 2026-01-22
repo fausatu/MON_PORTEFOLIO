@@ -97,7 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'modal-gest-fastfood': ['image/gest_fastfood.png'],
         'modal-letshare': ['image/letshare.png', 'image/screenshots/letshare2.png', 'image/screenshots/letshare3.png', 'image/screenshots/letshare4.png', 'image/screenshots/letchar1.png'],
         'modal-gest-event': ['image/gest.Event.png'],
-        'modal-taskmaster': ['image/taskMaster.png', 'image/screenshots/TaskMaster1.png', 'image/screenshots/taskmaster2.png', 'image/screenshots/taskmaster3.png', 'image/screenshots/taskmaster4.png']
+        'modal-taskmaster': ['image/taskMaster.png', 'image/screenshots/TaskMaster1.png', 'image/screenshots/taskmaster2.png', 'image/screenshots/taskmaster3.png', 'image/screenshots/taskmaster4.png'],
+        'modal-letvote': ['image/letvote.png', 'image/screenshots/letvote1.png', 'image/screenshots/LETVOT2.png', 'image/screenshots/LETVOTE3.png', 'image/screenshots/LETVOTE4.png']
     };
 
     // Initialize galleries

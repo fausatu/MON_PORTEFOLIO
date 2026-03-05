@@ -843,7 +843,8 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         background-color: var(--dark);
         padding: 2rem 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
